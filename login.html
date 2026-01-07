@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karibu Login Page</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container vh-100 d-flex align-items-center text-white" >
+        <div class="row w-100">
+            <div class="col-md-6 p-5 d-md-block leftside">
+                <h2>Karibu Groceries Limited</h2>
+                <p>"Streamlining the journey from harvest to wholesale. Empowering our managers and agents with real-time inventory control."</p>
+                <p>&copy Karibu Groceries Limited. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 p-5 text-black">
+                <h2>Welcome Back</h2>
+                <p>Please sign in to access the wholesale management system</p>
+
+                <form id="loginForm" action="">
+                    <div class="mb-3">
+                        <label class="form-label" for="">Username or Employee ID</label>
+                        <input id="username" class = "form-control w-50" type="text" placeholder="e.g. manager" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-labelw-50" for="">Password</label>
+                        <a href="#">Forgot password</a>
+                        <input id="password" class = "form-control w-50" type="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="logged-check">
+                        <label for=""><input type="checkbox">Keep me logged in on this device</label>
+                    </div>
+
+                    <button class="btn btn-success w-50"type="submit">Sign In</button>
+
+                    <p id="errorMsg" class="text-danger mt-2"></p>
+
+                    <div class="system-Support">
+                        <p>----------System Support------------</p>
+                    </div>
+                    <div class="trouble">
+                        <h5>Having trouble?</h5>
+                        <p>Contact the IT Helpdesk for access issues or accunt recovery</p>
+                        <h5>Contact Support</h5>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
